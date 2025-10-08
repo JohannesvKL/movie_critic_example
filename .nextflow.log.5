@@ -1,0 +1,83 @@
+Oct-08 15:01:40.002 [main] DEBUG nextflow.cli.Launcher - $> nextflow run bad_movie_critic.nf --input input.txt
+Oct-08 15:01:40.046 [main] DEBUG nextflow.cli.CmdRun - N E X T F L O W  ~  version 25.04.7
+Oct-08 15:01:40.060 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/Users/johannes/.nextflow/plugins; core-plugins: nf-amazon@2.15.0-patch1,nf-azure@1.16.0-patch1,nf-cloudcache@0.4.3,nf-codecommit@0.2.3,nf-console@1.2.1,nf-google@1.21.1,nf-k8s@1.0.0,nf-tower@1.11.4-patch1,nf-wave@1.12.1
+Oct-08 15:01:40.080 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Oct-08 15:01:40.080 [main] INFO  o.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Oct-08 15:01:40.082 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.12.0 in 'deployment' mode
+Oct-08 15:01:40.088 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Oct-08 15:01:40.098 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /Users/johannes/Desktop/nf_example/nextflow.config
+Oct-08 15:01:40.099 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /Users/johannes/Desktop/nf_example/nextflow.config
+Oct-08 15:01:40.116 [main] DEBUG n.secret.LocalSecretsProvider - Secrets store: /Users/johannes/.nextflow/secrets/store.json
+Oct-08 15:01:40.118 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@1ab6718] - activable => nextflow.secret.LocalSecretsProvider@1ab6718
+Oct-08 15:01:40.123 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `standard`
+Oct-08 15:01:40.328 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declaration
+Oct-08 15:01:40.336 [main] DEBUG nextflow.cli.CmdRun - Launching `bad_movie_critic.nf` [gigantic_einstein] DSL2 - revision: d13f27f156
+Oct-08 15:01:40.337 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Oct-08 15:01:40.337 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Oct-08 15:01:40.363 [main] DEBUG nextflow.Session - Session UUID: 7f2c9424-294a-4061-a5d9-f4134c76ae5b
+Oct-08 15:01:40.363 [main] DEBUG nextflow.Session - Run name: gigantic_einstein
+Oct-08 15:01:40.363 [main] DEBUG nextflow.Session - Executor pool size: 8
+Oct-08 15:01:40.368 [main] DEBUG nextflow.file.FilePorter - File porter settings maxRetries=3; maxTransfers=50; pollTimeout=null
+Oct-08 15:01:40.370 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=24; workQueue=LinkedBlockingQueue[-1]; allowCoreThreadTimeout=false
+Oct-08 15:01:40.406 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 25.04.7 build 5955
+  Created: 08-09-2025 13:29 UTC (15:29 CEST)
+  System: Mac OS X 26.0.1
+  Runtime: Groovy 4.0.26 on OpenJDK 64-Bit Server VM 21.0.3+9-LTS
+  Encoding: UTF-8 (UTF-8)
+  Process: 52873@Mac.fritz.box [192.168.178.35]
+  CPUs: 8 - Mem: 16 GB (105 MB) - Swap: 9 GB (1.2 GB)
+Oct-08 15:01:40.413 [main] DEBUG nextflow.Session - Work-dir: /Users/johannes/Desktop/nf_example/work [Mac OS X]
+Oct-08 15:01:40.413 [main] DEBUG nextflow.Session - Script base path does not exist or is not a directory: /Users/johannes/Desktop/nf_example/bin
+Oct-08 15:01:40.419 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Oct-08 15:01:40.423 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Oct-08 15:01:40.425 [main] DEBUG nextflow.Session - Observer factory (v2): LinObserverFactory
+Oct-08 15:01:40.434 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Oct-08 15:01:40.439 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 9; maxThreads: 1000
+Oct-08 15:01:40.474 [main] DEBUG nextflow.Session - Session start
+Oct-08 15:01:40.612 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Oct-08 15:01:40.656 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: local
+Oct-08 15:01:40.656 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Oct-08 15:01:40.659 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Oct-08 15:01:40.664 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=8; memory=16 GB; capacity=8; pollInterval=100ms; dumpInterval=5m
+Oct-08 15:01:40.666 [main] DEBUG n.processor.TaskPollingMonitor - >>> barrier register (monitor: local)
+Oct-08 15:01:40.676 [main] DEBUG nextflow.processor.TaskProcessor - Creating process 'bad_shuffle': maxForks=0; fair=false; array=0
+Oct-08 15:01:40.700 [main] DEBUG nextflow.script.ScriptRunner - Parsed script files:
+  Script_857e14ec95cb277d: /Users/johannes/Desktop/nf_example/bad_movie_critic.nf
+Oct-08 15:01:40.700 [main] DEBUG nextflow.Session - Session aborted -- Cause: Missing process or function good_shuffle() -- Did you mean 'bad_shuffle' instead?
+Oct-08 15:01:40.709 [Task monitor] DEBUG n.processor.TaskPollingMonitor - <<< barrier arrives (monitor: local) - terminating tasks monitor poll loop
+Oct-08 15:01:40.709 [main] ERROR nextflow.cli.Launcher - @unknown
+nextflow.exception.MissingProcessException: Missing process or function good_shuffle() -- Did you mean 'bad_shuffle' instead?
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:192)
+	at nextflow.script.BindableDef.invoke_a(BindableDef.groovy:51)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run0(BaseScript.groovy:182)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at nextflow.script.BaseScript.run(BaseScript.groovy:193)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy:246)
+	at nextflow.script.parser.v1.ScriptLoaderV1.runScript(ScriptLoaderV1.groovy)
+	at nextflow.script.ScriptRunner.run(ScriptRunner.groovy:246)
+	at nextflow.script.ScriptRunner.execute(ScriptRunner.groovy:139)
+	at nextflow.cli.CmdRun.run(CmdRun.groovy:379)
+	at nextflow.cli.Launcher.run(Launcher.groovy:513)
+	at nextflow.cli.Launcher.main(Launcher.groovy:673)
+Caused by: groovy.lang.MissingMethodException: No signature of method: nextflow.script.WorkflowBinding.good_shuffle() is applicable for argument types: () values: []
+	at nextflow.script.WorkflowBinding.invokeMethod(WorkflowBinding.groovy:113)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokePogoMethod(InvokerHelper.java:651)
+	at org.codehaus.groovy.runtime.InvokerHelper.invokeMethod(InvokerHelper.java:628)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeOnDelegationObjects(ClosureMetaClass.java:392)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:331)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at org.codehaus.groovy.vmplugin.v8.IndyInterface.fromCache(IndyInterface.java:321)
+	at Script_857e14ec95cb277d$_runScript_closure2$_closure4.doCall(Script_857e14ec95cb277d:27)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.codehaus.groovy.reflection.CachedMethod.invoke(CachedMethod.java:343)
+	at groovy.lang.MetaMethod.doMethodInvoke(MetaMethod.java:328)
+	at org.codehaus.groovy.runtime.metaclass.ClosureMetaClass.invokeMethod(ClosureMetaClass.java:280)
+	at groovy.lang.MetaClassImpl.invokeMethod(MetaClassImpl.java:1007)
+	at groovy.lang.Closure.call(Closure.java:433)
+	at groovy.lang.Closure.call(Closure.java:412)
+	at nextflow.script.WorkflowDef.run0(WorkflowDef.groovy:205)
+	at nextflow.script.WorkflowDef.run(WorkflowDef.groovy:189)
+	... 12 common frames omitted
