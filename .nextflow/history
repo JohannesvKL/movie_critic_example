@@ -1,0 +1,12 @@
+2025-10-05 18:42:24	1.5s	scruffy_lovelace	ERR	0db6a6707a21c136c4c5740daee9d859	9e22dbef-8604-4956-b88b-318d953a8cde	nextflow run main.nf
+2025-10-05 18:43:08	2.2s	suspicious_poitras	ERR	096d1d6d6e7895ddb7054504df3b615e	28abfdba-f563-49d4-a0ff-00479b628e74	nextflow run main.nf
+2025-10-05 18:47:46	1.8s	crazy_shaw	OK	096d1d6d6e7895ddb7054504df3b615e	25114c7a-dfb4-4c1b-80d1-224863a61e04	nextflow run main.nf
+2025-10-05 18:49:50	992ms	serene_woese	OK	096d1d6d6e7895ddb7054504df3b615e	f52bef98-eb41-4d47-984d-4714657f8d61	nextflow run main.nf
+2025-10-05 18:50:41	1.9s	happy_yonath	OK	096d1d6d6e7895ddb7054504df3b615e	18cfcd66-8334-4034-8b95-38d92cadd5be	nextflow run main.nf --publishDir outdir
+2025-10-05 18:53:55	1.7s	wise_sammet	OK	096d1d6d6e7895ddb7054504df3b615e	30d0a583-7914-4529-8c65-8ff21ac4706f	nextflow run main.nf --publishDir ./outdir
+2025-10-05 18:55:38	2s	sick_leavitt	OK	2cb9e506d8727660debccea07c9dc5c9	5b3a6196-0ebf-4e7f-86d0-18f101a4ab04	nextflow run main.nf
+2025-10-05 18:56:06	1.9s	exotic_torricelli	OK	2cb9e506d8727660debccea07c9dc5c9	239effad-d9b4-4390-aadb-a736ac92e87c	nextflow run main.nf
+2025-10-06 00:40:44	1.7s	big_lichterman	OK	9039eb9868924a20c153b0c05afba343	9aeaba59-1081-4811-859c-aa5b61dc2f5d	nextflow run main.nf --input input.txt
+2025-10-06 01:07:45	-	fervent_lavoisier	-	9738a2df4225401cc2080c47684b171bb272e1b7	4cc00d64-98ea-42d9-8079-ca4881330a9e	nextflow run nf-core/rnaseq -r 3.21.0 -profile test --outdir newdir
+2025-10-06 16:12:49	1.4s	chaotic_einstein	OK	9039eb9868924a20c153b0c05afba343	2e58c813-3291-4dbc-b85c-38cfd3ec67a2	nextflow run main.nf --input input.txt --N 5
+2025-10-08 11:46:09	1.3s	ridiculous_majorana	OK	19a44585408e787fc8f787cdffbd5005	2aaa6c52-0c44-4be7-a943-69265a6eb231	nextflow run main.nf --input input.txt

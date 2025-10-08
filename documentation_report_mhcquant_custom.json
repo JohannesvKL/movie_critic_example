@@ -1,0 +1,54 @@
+{
+  "source": "https://github.com/nf-core/mhcquant",
+  "source_type": "github",
+  "files_checked": [
+    "main.nf",
+    "nextflow.config",
+    "conf/base.config",
+    "README.md",
+    "docs/usage.md"
+  ],
+  "dependency_pinning": {
+    "all_pinned": true,
+    "unpinned_dependencies": []
+  },
+  "config_files": {
+    "presence": true,
+    "correctness_score": 7.0,
+    "files_analyzed": [
+      "nextflow.config",
+      "conf/base.config"
+    ]
+  },
+  "overall_assessment": {
+    "score": 7.5,
+    "medal": "🥈 Silver",
+    "individual_scores": {
+      "main.nf": {
+        "score": 7.0,
+        "type": "nextflow"
+      },
+      "nextflow.config": {
+        "score": 7.0,
+        "type": "config"
+      },
+      "conf/base.config": {
+        "score": 7.0,
+        "type": "config"
+      },
+      "README.md": {
+        "score": 7.0,
+        "type": "readme"
+      },
+      "docs/usage.md": {
+        "score": 7.0,
+        "type": "readme"
+      }
+    }
+  },
+  "parameter_consistency": {
+    "checked": false,
+    "results": ""
+  },
+  "analysis_timestamp": "2025-10-07"
+}
