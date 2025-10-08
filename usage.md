@@ -8,4 +8,4 @@ This pipeline outputs a randomly shuffled list of entries from a `.txt` file.
 
 **Usage:**
 ```bash
-nextflow run main.nf --input input.txt --N 5
+nextflow run bad_movie_critic.nf --input input.txt --N 5
