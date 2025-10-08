@@ -2,21 +2,22 @@ nextflow.enable.dsl=2
 
 // Define default parameter
 params.input = "input.txt"
-params.outdir = "results/bad"  // default output directory
+params.outdir = "results/good"  // default output directory
 
-process bad_shuffle {
+
+process good_shuffle {
     publishDir params.outdir, mode: 'copy'
 
     input:
     path input_file
 
     output:
-    path "bad_shuffled.txt"
+    path "good_shuffled.txt"
 
     script:
     """
-    # Non-deterministic shuffling — bad!
-    shuf ${input_file} > bad_shuffled.txt
+    # Deterministic shuffling with fixed seed — good!
+    shuf --random-source=<(yes 42) ${input_file} > good_shuffled.txt
     """
 }
 
@@ -24,7 +25,7 @@ workflow {
     // Use the parameter for input file
     input_ch = Channel.fromPath(params.input)
 
-    bad = bad_shuffle(input_ch)
+    good = good_shuffle(input_ch)
 
     //compare_outputs(bad.out, good.out)
 }
